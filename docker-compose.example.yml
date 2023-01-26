@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api-template:
+    build:
+      context: .
+      args:
+        GH_TOKEN: ""
+    container_name: api-template
+    restart: always
+    ports:
+      - '5000:80'
+    environment:
+      PORT: 80
+      APP_ENV: development

@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mutation {
+  login(password: String!, username: String!): Token!
+}
+
+type Query {
+  whoAmI: String!
+}
+
+type Token {
+  """access token"""
+  accessToken: String!
+
+  """id token"""
+  idToken: String!
+
+  """name"""
+  name: String!
+
+  """refresh token"""
+  refreshToken: String!
+
+  """user id"""
+  userId: String!
+}
